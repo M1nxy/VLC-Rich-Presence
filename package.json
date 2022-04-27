@@ -1,0 +1,23 @@
+{
+  "name": "vlc-rich-presence",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon win_tray.js",
+    "build": "npm run build:win && npm run build:linux && npm run build:macos",
+    "build:linux": "pkg linux_tray.js -t node10-linux-x64 -o ./dist/linux_tray",
+    "build:macos": "pkg linux_tray.js -t node10-macos-x64 -o ./dist/macos_tray",
+    "build:win": "pkg win_tray.js -t node16-win-x64 -o ./dist/win_tray"
+  },
+  "author": "M1nx + Zemyoro",
+  "license": "ISC",
+  "dependencies": {
+    "discord-rpc": "^4.0.1",
+    "node-spotify-api": "^1.1.1",
+    "songlink-api": "^1.0.0",
+    "systray": "^1.0.5",
+    "vlc-client": "^1.0.6",
+    "vlc.js": "3.1.0"
+  }
+}
