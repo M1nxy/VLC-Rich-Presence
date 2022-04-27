@@ -11,7 +11,7 @@
 ## Other Platforms
 1. Eta S0n
 
-## Getting spotify data working
+## Spotify Data
 1. Create an application on the [<ins>Spotify for Developers Dashboard</ins>](https://developer.spotify.com/dashboard/applications)
 1. Copy your Client ID and Client Secret then replace the matching values in the `./config.json` file
 1. Update the setup value to true (default: false)
